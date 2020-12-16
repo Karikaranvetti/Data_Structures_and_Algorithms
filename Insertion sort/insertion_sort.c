@@ -4,10 +4,11 @@ void InsertionSort(int* arr ,int n){
     int temp;     // tempvarible for holding the element as sorting element
     for (int  i = 1; i < n; i++)
     {   int j = i-1;
+     	temp=arr[j+1]; // the key  stored here 
      /* Move elements of arr[0..i-1], that are  greater than key, to one position ahead of their current position */
         while ((j>=0) && arr[j]>arr[j+1])  //condition for check the swpe nnededor the o the elements comes or not 
         {
-            temp=arr[j+1];
+            
             arr[j+1]=arr[j];
             j--;
         }
